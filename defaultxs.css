@@ -1,6 +1,6 @@
 .popline {
     position: absolute;
-    height: 54px;
+    height: 44px;
     line-height: 54px;
     display: none;
     margin: 0;
@@ -11,6 +11,20 @@
     background-repeat: repeat-x;
     border-radius: 5px;
     padding: 0 10px;
+    margin-left: -10px;
+}
+ul.popline:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #262625;
+    -webkit-transform: rotate(45deg) scale(.5);
+    transform: rotate(45deg) scale(.5);
+    float: left;
+    position: absolute;
+    bottom: -10px;
+    margin-left: 61px;
 }
   .popline li {
     color: white;
@@ -24,12 +38,13 @@
     @media screen and (-webkit-min-device-pixel-ratio: 0) {
       .popline li i {
     font-weight: bold;
-    width: 22px;
-    height: 22px;
-    margin: 15px -13px;
+    width: 20px;
+    height: 20px;
+    margin: 12px -13px;
     position: absolute;
-    background-size: 22px;
+    background-size: 20px;
     background-repeat: no-repeat;
+    image-rendering: initial;
 } }
     .popline li .text {
       font-size: 26.4px; }
@@ -38,23 +53,24 @@ i.icon-search {
 }
 body .popline li i.icon-twitter {
     background-image: url(https://img.webme.com/pic/a/aliq03/twitter-white-70.png);
-    height: 30px;
-    width: 30px;
-    background-size: 26px;
+    height: 26px;
+    width: 26px;
+    background-size: 23px;
     image-rendering: auto;
+    margin: 13px -12px;
 }
 body .popline li i.icon-facebook {
     background-image: url(https://img.webme.com/pic/a/aliq03/facebook-white-70.png);
-    background-size: 11px;
+    background-size: 9px;
     width: 22px;
     height: 22px;
-    margin: 14px -4px;
+    margin: 13px -4px;
     image-rendering: auto;
 }
 body .popline li i.icon-pinterest {
     background-image: url(https://img.webme.com/pic/a/aliq03/pinterest-white-70.png);
-    background-size: 22px 22px;
-    margin: 14px -10px;
+    background-size: 18px 19px;
+    margin: 13px -8px;
 }
   .popline .hover {
     background: -moz-linear-gradient(top, rgba(44, 166, 248, 0.4) 0%, #2b8ae2 100%);
